@@ -44,7 +44,7 @@ From a terminal in this folder, with JDK 17 selected:
 
 ```sh
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-./gradlew assembleDebug testDebugUnitTest lintDebug
+sh ./gradlew assembleDebug testDebugUnitTest lintDebug
 ```
 
 Debug APK: `app/build/outputs/apk/debug/app-debug.apk`.
@@ -64,5 +64,3 @@ Open-Meteo's free endpoint is intended for non-commercial use; check its terms b
 This is a small interview app. A single activity-scoped ViewModel shares the selected city across Today and Forecast and survives rotation. Process death restores saved cities/units but resets temporary navigation/search and selects the first saved city. The cache is a last-successful snapshot with an explicit timestamp, not a background sync engine; it has no automatic expiry or eviction. A city must have loaded once before offline viewing works.
 
 Preferences/cache use SharedPreferences for a small, readable demo. For a larger app, use DataStore for settings, Room for cached forecasts, inject dispatchers/clock, split screen ViewModels, add paging/cache eviction, localization, adaptive layouts and instrumented accessibility/UI tests. There is no precise device-location feature or API secret to protect.
-
-See `INTERVIEW_WALKTHROUGH.txt` for a timed demo and explanations to practice.
