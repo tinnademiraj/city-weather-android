@@ -15,7 +15,7 @@ Android Studio generates `local.properties` for your Android SDK. Local SDK path
 ## What to demonstrate
 
 - **Today:** real current weather, feels-like temperature, humidity, wind, and the next 24 hours.
-- **Cities:** London, Paris, New York, Tokyo, Belgrade, and Sydney; search for more cities through the geocoding API. Tap a city to view it; Save/Remove manages favorites.
+- **Cities:** London, Paris, New York, Tokyo, Prishtina, and Sydney; search for more cities through the geocoding API. Tap a city to view it; Save/Remove manages favorites.
 - **Forecast:** seven days, high/low temperatures, rain probability, sunrise, and sunset.
 - **Settings:** switch Celsius/Fahrenheit; the choice and saved cities survive app restarts.
 - **Resilience:** visible loading and retry states, cancellation when changing city/search, and a clearly labeled last-successful forecast when offline.

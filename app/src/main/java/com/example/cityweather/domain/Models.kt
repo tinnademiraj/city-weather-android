@@ -12,7 +12,7 @@ val featuredCities = listOf(
     City(2988507, "Paris", "France", 48.8534, 2.3488),
     City(5128581, "New York", "United States", 40.7143, -74.006),
     City(1850147, "Tokyo", "Japan", 35.6895, 139.6917),
-    City(792680, "Belgrade", "Serbia", 44.804, 20.4651),
+    City(786714, "Prishtina", "Kosovo", 42.6727, 21.1669),
     City(2147714, "Sydney", "Australia", -33.8679, 151.2073)
 )
 data class CurrentWeather(val time: LocalDateTime, val temperature: Double, val feelsLike: Double,
